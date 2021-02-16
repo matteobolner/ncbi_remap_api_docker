@@ -15,10 +15,9 @@ RUN cpanm Getopt::Long \
  JSON
 
 
-
-
 COPY . /home/ncbi_remap/
 
-ENTRYPOINT ["perl","/home/ncbi_remap/remap_api.pl"]
+#ENTRYPOINT ["perl","/home/ncbi_remap/remap_api.pl"]
 
-#CMD ["perl", "/home/ncbi_remap/remap_api.pl" ]
+ENTRYPOINT ["perl"]
+
